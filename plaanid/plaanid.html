@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Sokolaadivabrik - Hinnad ja Plaanid</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="./css/plans.css" />
+</head>
+
+<body id="main">
+  <!-- header -->
+  <!-- navbar -->
+  <nav class="navbar fixed-nav" id="nav">
+    <div class="nav-center">
+      <!-- navbar header -->
+      <div class="nav-header">
+        <button class="nav-toggle" id="nav-btn">
+          <img src="../img/icons/bars.svg" alt="navigation button open" />
+        </button>
+        <a href="plaanid.html" class="home-link">
+          <div class="nav-logo-container">
+            <p class="street-name">sokolaadivabrik</p>
+            <span class="house-number">M 22</span>
+          </div>
+        </a>
+      </div>
+      <!-- end of navbar header -->
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <button class="close-btn" id="close-btn">
+        <img src="../img/icons/close.svg" alt="navigation button close" />
+      </button>
+      <!-- nav links -->
+      <ul class="sidebar-links">
+        <li>
+          <a href="./plaanid.html">hinnad ja plaanid</a>
+        </li>
+      </ul>
+      <a href="plaanid.html" class="home-link">
+        <div class="nav-logo-container">
+          <p class="street-name">sokolaadivabrik</p>
+          <span class="house-number">M 22</span>
+        </div>
+      </a>
+    </div>
+  </aside>
+  <!-- end of sidebar -->
+  <!-- table section -->
+  <section class="section floor-plan" id="home">
+    <div class="section-center">
+      <h1 class="main-heading">hinnad ja plaanid</h1>
+      <div class="plans-container">
+        <!-- list of apartments -->
+        <div class="floor-list">
+          <div class="floor-select-container">
+            <p>Korrus:</p>
+            <button class="filter-btn active-selected-floor" type="button" data-id="all">
+              kõik
+            </button>
+            <button class="filter-btn" type="button" data-id="sokkel">
+              sokkel
+            </button>
+            <button class="filter-btn" type="button" data-id="1">1</button>
+            <button class="filter-btn" type="button" data-id="2">2</button>
+            <button class="filter-btn" type="button" data-id="3">3</button>
+          </div>
+          <table class="list content-table table-sortable">
+            <thead>
+              <tr class="row-header">
+                <th>Korter</th>
+                <th>Korrus</th>
+                <th>Tube</th>
+                <th>Pindala m&#178;</th>
+                <th>Loft m&#178;</th>
+                <th>Rõdu m&#178;</th>
+                <th>Hind</th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+        </div>
+        <!-- end of list of apartments -->
+        <!-- list of plans -->
+        <div class="plan-container">
+          <div class="compass">
+            <img src="./img/compass.png" alt="compass" />
+          </div>
+
+          <div class="floor show-floor-plan 1-floor" id="1-floor">
+            <h1>1 korrus</h1>
+            <!-- 1 floor plan -->
+            <svg width="2816" height="1103" version="1.1" viewBox="0 0 745.07 291.84" xmlns="http://www.w3.org/2000/svg"
+              xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <metadata>
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    <dc:title />
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <g transform="translate(538.84 139.87)" opacity=".754">
+                <image x="-538.84" y="-139.87" width="745.07" height="291.84" preserveAspectRatio="none"
+                  xlink:href="./img/floors/floor_1.png" />
+                <g fill="none" stroke="#000" stroke-width=".26458px">
+                  <path class="plan" id="plan-3"
+                    d="m-157.37 129.54h-151.54v-74.648h70.907v-9.5415h43.966v10.477h36.669z" />
+                  <path class="plan" id="plan-12"
+                    d="m-59.947 129.48-97.422 0.0619-0.18708-154.72h30.934v6.7584h30.692v71.702h25.4v7.4083h10.319z" />
+                  <path class="plan" id="plan-13"
+                    d="m-126.62-25.185h-4.6302v-107.41h70.511v178.46h-10.186v7.5406l-25.003-0.13225v-71.702h-30.692z" />
+                  <path class="plan" id="plan-14"
+                    d="m-60.741-132.59h68.262v107.55h35.851v74.505h-59.771v-4.116h-8.1851v-37.184h-36.155z" />
+                  <path class="plan" id="plan-15"
+                    d="m-24.536 129.54v-71.036h8.1131l0.0254-9.0376h59.77v-23.854h101.22v103.93z" />
+                  <path class="plan" id="plan-1"
+                    d="m-518.07 129.38v-154.48h18.984v-29.766h130.44v29.766h7.4007v154.45z" />
+                  <path class="plan" id="plan-2"
+                    d="m-308.91 54.889v-30.321h-52.397l0.0585-49.676h66.22v-29.567h131.1v29.501l6.3721-0.01148 0.18708 81.009h-36.669v-10.477h-43.966v9.5415z" />
+                </g>
+              </g>
+            </svg>
+            <!-- end of 1 floor plan -->
+          </div>
+          <div class="floor show-floor-plan 2-floor" id="2-floor">
+            <h1>2 korrus</h1>
+            <!-- 2 floor plan -->
+            <svg width="2816" height="1103" version="1.1" viewBox="0 0 745.07 291.84" xmlns="http://www.w3.org/2000/svg"
+              xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <metadata>
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    <dc:title />
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <g transform="translate(503.31 145.16)" opacity=".7541">
+                <image x="-503.31" y="-145.16" width="745.07" height="291.84" preserveAspectRatio="none"
+                  xlink:href="./img/floors/floor_2.png" />
+              </g>
+              <g fill="none" stroke="#000" stroke-width=".26458px">
+                <path class="plan" id="plan-6" transform="translate(503.31 145.16)"
+                  d="m-324.92-30.266h65.709v-29.77h131.06v29.466h8.0563v72.286h-73.786v-1.736h-8.169v10.22h-39.898v-25.111h-30.355v-6.6416h-52.619z"
+                  opacity=".7541" />
+                <path class="plan" id="plan-5" transform="translate(503.31 145.16)"
+                  d="m-482.34-30.729h18.984v-29.501h130.7v29.964h7.7391v69.585h-27.98v9.6573h-129.68z"
+                  opacity=".7541" />
+                <path class="plan" id="plan-4" transform="translate(503.31 145.16)"
+                  d="m-482.58 48.976v75.72h157.65l6e-3 -85.378h-27.98v9.6573z" opacity=".7541" />
+                <path class="plan" id="plan-7" transform="translate(503.31 145.16)"
+                  d="m-272.31 25.089v99.063h152.24l-0.0352-82.436h-73.786v18.148h-8.1707l3e-3 -9.6641h-39.899v-25.111z"
+                  opacity=".7541" />
+                <path class="plan" id="plan-18" transform="translate(503.31 145.16)"
+                  d="m-120.06 124.15h132.48v-117.87l-30.984-0.00739v34.385h-42.355v5.5659h-59.167z" opacity=".7541" />
+                <path class="plan" id="plan-19" transform="translate(503.31 145.16)"
+                  d="m-120.1-30.57h24.357v6.5013h85.941v30.348h-8.7643v34.385h-42.355v5.5659h-59.167z"
+                  opacity=".7541" />
+                <path class="plan" id="plan-20" transform="translate(503.31 145.16)"
+                  d="m-95.74-30.57v-107.1h138.72v113.6h-138.72z" opacity=".7541" />
+                <path class="plan" id="plan-17" transform="translate(503.31 145.16)"
+                  d="m12.42 6.2865h66.58v36.141h22.965v81.912l-89.545-0.18709z" opacity=".7541" />
+                <path class="plan" id="plan-16" transform="translate(503.31 145.16)"
+                  d="m101.97 124.34h78.405v-106.5h-78.451z" opacity=".7541" />
+              </g>
+            </svg>
+            <!-- end of 2 floor plan -->
+          </div>
+          <div class="floor show-floor-plan 3-floor" id="3-floor">
+            <h1>3 korrus</h1>
+            <svg width="2816" height="1103" version="1.1" viewBox="0 0 745.07 291.84" xmlns="http://www.w3.org/2000/svg"
+              xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <metadata>
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    <dc:title />
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <g transform="translate(520.7 148.94)" opacity=".74426">
+                <image x="-520.7" y="-148.94" width="745.07" height="291.84" preserveAspectRatio="none"
+                  xlink:href="./img/floors/floor_3.png" />
+              </g>
+              <g fill="none" stroke="#000" stroke-width=".26458px">
+                <path class="plan" id="plan-9" transform="translate(520.7 148.94)"
+                  d="m-502.31-31.003h54.504v-2.1167h15.875v-31.164h77.507v31.15h8.8791v76.543h-156.7z"
+                  opacity=".74426" />
+                <path class="plan" id="plan-8" d="m18.452 192.35v73.83h54.186v2.0112h102.5l0.0158-75.841z" />
+                <path class="plan" id="plan-10"
+                  d="m175.15 115.81h64.955v-31.571h131.73v31.618h8.8305v76.432h-124.35v-7.3422h-31.247v-20.259h-49.929z" />
+                <path class="plan" id="plan-11" d="m380.67 192.29v75.765h-155.51l-0.0927-83.108h31.247v7.3422z" />
+                <path class="plan" id="plan-23"
+                  d="m380.67 268.05h93.811v-70.408h39.208v-28.282h-17.81v-46.725h-115.18z" />
+                <path class="plan" id="plan-22" d="m474.48 268.05h95.598v-98.642l-56.389-0.0468v28.282h-39.208z" />
+                <path class="plan" id="plan-21"
+                  d="m570.08 268.05h52.553v-1.7773h56.828v-76.799h-81.313v-20.534l-28.068 0.46772z" />
+                <path class="plan" id="plan-24"
+                  d="m495.88 122.64h-84.385v-108.88h125.68v107.29h-3.5057v19.976h-37.786z" />
+              </g>
+            </svg>
+          </div>
+          <div class="floor show-floor-plan sokkel-floor" id="sokkel-floor">
+            <h1>soklikorrus</h1>
+            <!-- 0 floor plan -->
+            <svg width="2816" height="1103" version="1.1" viewBox="0 0 745.07 291.84" xmlns="http://www.w3.org/2000/svg"
+              xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <metadata>
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    <dc:title />
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <g transform="translate(83.911 41.067)" opacity=".754">
+                <image x="-83.911" y="-41.067" width="745.07" height="291.84" preserveAspectRatio="none"
+                  xlink:href="./img/floors/floor_0.png" />
+                <path class="plan" id="plan-25"
+                  d="m-62.347 227.22 368.8 0.27553 0.74834-131.34-10.851-21.702-359.02-0.18709z" fill="none"
+                  stroke="#000" stroke-width=".26458px" />
+                <path class="plan" id="plan-26" d="m324.34-33.262h137.72v112.05h-137.58z" fill="none" stroke="#000"
+                  stroke-width=".26458px" />
+              </g>
+            </svg>
+            <!-- end of 0 floor plan -->
+          </div>
+        </div>
+        <!-- end of list of plans -->
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div class="backdrop">
+    <div class="apt-modal" id="apt-modal">
+      <h1 id="apt-number">Sokolaadi 22 -</h1>
+      <div class="apt-modal-img">
+        <img src="" alt="" id="apt-plan" />
+      </div>
+      <p>*korterite lõplik suurus võib erineda plaanil olevast suurusest.</p>
+      <button id="apt-close-btn">&times;</button>
+      <div class="modal-compass">
+        <img src="./img/compass.png" alt="compass" />
+      </div>
+    </div>
+  </div>
+  <!-- end of Modal -->
+  <!-- build info -->
+  <div class="section info-section">
+    <div class="section-center">
+      <!-- buttons -->
+      <div class="button-cont">
+        <a href="#"><button class="info-btn btn">soklikorrus</button></a>
+        <a href="#"><button class="info-btn btn">1. korrus</button></a>
+        <a href="#"><button class="info-btn btn">2. korrus</button></a>
+        <a href="#"><button class="info-btn btn">3. korrus</button></a>
+        <a href="#"><button class="info-btn btn">parkla</button></a>
+      </div>
+      <!-- text -->
+      <div class="info-text">
+        <p class="info-p small-p">Korteri laekõrgus 2.70m, loftides 4.20m</p>
+        <p class="info-p small-p">Loftides lisakorruse kõrgus 1.80m</p>
+        <p class="info-p small-p">
+          Panipaik lisatasu eest vahemikus 500-4000€ sõltuvalt suurusest
+          1m2-7m2
+        </p>
+        <p class="info-p">
+          Parkimiskoht on võimalik osta lisatasu eest 2500€
+        </p>
+        <p class="info-p">
+          Arendaja jätab endale õiguse teha planeeringutes ja hinnakirjas
+          muudatusi.
+        </p>
+        <h1 class="info-h1">MÜÜGITINGIMUSED</h1>
+        <p class="info-p">
+          Hinnas sisaldub: <br />
+          – Korteri ja elamu lõplik valmidus vastavalt
+          projektdokumentatsioonile ja siseviimistluspaketile <br />
+          – Tasu tehnovõrkude rajamise ja liitumise eest (vesi, elekter,
+          kanalisatsioon, keskküte)
+        </p>
+        <p class="info-p">
+          Hinnas ei sisaldu: <br />
+          – Müügilepinguga seotud notaritasud ja riigilõivud <br />
+          – Panipaik (500€-4000€) <br />
+          – Parkimiskoht (2500€)
+        </p>
+        <h1 class="info-h1">BRONEERIMINE</h1>
+        <p class="info-p">
+          Kliendiga sõlmitakse broneerimiskokkulepe, mis kehtib võlaõigusliku
+          lepingu sõlmimiseni. Ostusoovi kinnitamiseks tasub ostja
+          broneerimislepingu sõlmimisel 1000 euro suuruse ettemakse.
+        </p>
+        <h2 class="info-h2">Võlaõiguslik leping</h2>
+        <p class="info-p">
+          Kliendiga sõlmitakse notariaalne võlaõiguslik müügileping, milles
+          lepitakse kokku kõik tehingu detailid. Võlaõigusliku lepinguga tasub
+          ostja 20% ostusummast.
+        </p>
+        <h2 class="info-h2">Asjaõiguslik leping</h2>
+        <p class="info-p">
+          Korteriomandi valmimisel sõlmitakse notariaalne asjaõiguslik leping,
+          kus ostja tasub ülejäänud osa ostusummast ning toimub korteri
+          omandiõiguse üleminek. Asjaõigusleping tuleb sõlmida 1 kuu jooksul
+          peale korteri lõplikku valmimist.
+        </p>
+        <p class="info-p">
+          * Kodulehel kasutatud pildid on illustratiivsed ning võivad erineda
+          lõplikult välja kujunevast elukeskkonnast.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end of build info -->
+  <!-- contact footer -->
+  <section class="section contact-footer footer-fixed">
+    <div class="section-center">
+      <ul>
+        <li>
+          <p class="address">
+            <span class="icon icon-marker"><img src="../img/icons/marker.png" alt="" /></span>
+
+            Demo 22, Pärnu
+          </p>
+        </li>
+        <li>
+          <p class="email">
+            <span class="icon icon-email"><img src="../img/icons/envelope.png" alt="" /></span>
+            <a href="">info@demo.demo</a>
+          </p>
+        </li>
+        <li>
+          <p class="phone">
+            <span class="icon icon-phone"><img src="../img/icons/phone.png" alt="" /></span>
+            <a href="tel:+372 123 456">+372 123 456</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- end of contact footer -->
+  <!-- footer -->
+  <footer class="section footer footer-fixed">
+    <div class="footer-text">
+      <p>
+        &copy; <span id="date"></span> OÜ Demo. Kõik õigused
+        reserveeritud
+      </p>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <!-- cookie banner -->
+  <div class="cookie-banner">
+    <p>
+      Veebilehel kasutatakse küpsiseid. Küpsised on vajalikud teie
+      kasutajamugavuse ning veebikülastusstatistika eesmärgil. Veebilehe
+      kasutamise jätkamisel nõustute küpsiste
+      <span><a href="../privacy.html" target="_blank">privaatsustingimustega</a></span>
+    </p>
+    <button class="cookie-accept-btn btn">nõustu</button>
+  </div>
+  <!-- end of cookie banner -->
+  <!-- regular js -->
+  <script src="./js/plans.js"></script>
+</body>
+
+</html>

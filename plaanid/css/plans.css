@@ -1,0 +1,377 @@
+/*
+=============== 
+Table
+===============
+*/
+.plans-container {
+  display: grid;
+  grid-template-columns: -webkit-min-content;
+  grid-template-columns: min-content;
+  justify-content: center;
+}
+.floor-select-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  background: rgba(72, 32, 107, 0.5);
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  /* font-size: 0.8rem; */
+  font-family: var(--ff-primary);
+}
+.floor-select-container p,
+button {
+  color: var(--clr-white);
+  font-weight: 300;
+  margin: auto;
+  padding: 5px 0;
+  font-size: 0.8rem;
+}
+.floor-select-container button {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: var(--ff-primary);
+  cursor: pointer;
+  outline: none;
+}
+.active-selected-floor {
+  background: var(--clr-red-5) !important;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.plan-container {
+  display: none;
+}
+.floor-plan {
+  padding-bottom: 1rem;
+}
+.floor {
+  display: none;
+}
+.show-floor-plan {
+  display: block;
+}
+
+.floor-plan h1 {
+  font-family: var(--ff-primary);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.content-table {
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  min-width: 300px;
+  font-family: var(--ff-primary);
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
+  background: var(--clr-red-5);
+  color: var(--clr-white);
+  text-align: center;
+}
+.content-table th,
+.content-table td {
+  padding: 12px 3px;
+  white-space: nowrap;
+}
+
+.content-table th {
+  font-weight: 300;
+}
+.content-table tbody tr {
+  font-weight: 300;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+  background: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--clr-red-5);
+}
+.rida {
+  cursor: pointer;
+}
+.rida:hover {
+  background: rgba(201, 137, 0, 0.3) !important;
+}
+
+.hovered-plan {
+  fill: #c98900;
+  opacity: 0.3;
+}
+.hovered-rida {
+  background: rgba(201, 137, 0, 0.3) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .content-table {
+    font-size: 0.8rem;
+    min-width: 400px;
+  }
+  .content-table thead tr {
+    font-weight: 500;
+  }
+  .content-table th,
+  .content-table td {
+    padding: 12px 6px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-center {
+    max-width: 80vw;
+  }
+  .plans-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .floor-list {
+    flex-grow: 4;
+  }
+  .plan-container {
+    margin-left: 1rem;
+    display: block;
+    flex-grow: 5;
+    position: relative;
+  }
+  .compass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.4;
+    width: 100px;
+    transform: rotate(83deg);
+  }
+  svg {
+    display: block;
+    max-height: 250px;
+    max-width: 100%;
+  }
+  svg path {
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 0.1;
+  }
+  svg path:hover {
+    fill: #c98900;
+    opacity: 0.3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-center {
+    max-width: 70vw;
+  }
+  /* .content-table {
+    font-size: 1rem;
+  }
+  .floor-select-container p,
+  button {
+    font-size: 1rem;
+  } */
+}
+@media screen and (min-width: 1600px) {
+  .content-table {
+    font-size: 1rem;
+  }
+  .floor-select-container p,
+  button {
+    font-size: 1rem;
+  }
+}
+
+/* for table sorting */
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*
+=============== 
+Modal
+===============
+*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: 20;
+}
+.apt-modal {
+  background: white;
+  width: 80%;
+  max-width: 900px;
+  max-height: 600px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.apt-modal-img {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+.apt-modal h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.apt-modal-img img {
+  width: 80%;
+  margin: auto;
+}
+.apt-modal p {
+  margin-top: -1rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-red-5);
+  font-weight: 300;
+}
+.open-modal {
+  visibility: visible;
+  z-index: 10;
+}
+.modal-compass {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  opacity: 0.4;
+  width: 100px;
+  transform: rotate(83deg);
+}
+#apt-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-gray-8);
+  cursor: pointer;
+}
+#apt-close-btn:hover {
+  transform: scale(1.3);
+}
+@media screen and (min-width: 768px) {
+  .apt-modal p {
+    margin-top: 0;
+  }
+}
+
+/*
+=============== 
+Info area
+===============
+*/
+.info-section {
+  padding-top: 0;
+}
+.button-cont {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.button-cont button {
+  background: #48206b;
+  margin-left: 10px;
+}
+.info-text {
+  width: 90%;
+  margin: 0 auto;
+  font-family: var(--ff-primary);
+}
+.small-p {
+  margin-bottom: 0;
+}
+.info-h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.info-h2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.info-p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1000px) {
+  .info-text {
+    margin: 0;
+  }
+  .button-cont {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 60vw;
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+}
+.cookie-accept-btn {
+  margin: auto;
+  margin-right: 0.5rem;
+}
